@@ -1,0 +1,40 @@
+/* --- align --- */
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+
+.featured {
+    background: #fbfbfb;
+    margin: 0 0 60px 0;
+    padding: 35px 0 30px 0;
+}
+.featured h1 {
+    font-size: 70px;
+    line-height: 1;
+    color: #6dc5c8;
+}
+.featured h1 small {
+    font-size: 22px;
+    font-weight: lighter;
+    color: rgb(153, 153 ,153);
+}
+.featured a {
+    margin: 15px 0 10px 0;
+}
+
+.themes p {
+    font-weight: lighter;
+}
+.themes h4 {
+    color: #E67E22;
+}
+.themes a,
+.themes a:visited {
+    color: #D35400;
+}
