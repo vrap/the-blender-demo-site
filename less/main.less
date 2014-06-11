@@ -11,18 +11,7 @@
 @bubble-size: 20px;
 @bubble-pos-bottom: 0px;
 @bubble-pos-top: 550px;
-
-/* Mixin to generate random number;
-   int should be 0 or 1, 1 being to make it an integer 
-*/
-.makeRandom(@min: 0, @max: @min+1, @int: 0) { 
-  .checkInt() {
-    @getNum: `Math.random() * (@{max} - @{min} + @{int})`;
-    @base: unit(`@{int} == 1 ? Math.floor(@{getNum}) : @{getNum}`);
-  }
-  .checkInt();
-  @randNum: @base + @min;
-}
+@bubble-color: #3498DB;
 
 /*
  * Helpers
@@ -41,11 +30,16 @@
  * First page
  */
 .featured {
+    // Header
     background: @ultralight-grey;
     margin: 0 0 60px 0;
     padding: 35px 0 0 0;
 
     h1 {
+        font-family: 'Lobster Two', cursive;
+        font-weight: lighter;
+        font-style: italic;
+
         font-size: 70px;
         line-height: 1;
         color: @blue-green;
@@ -53,8 +47,9 @@
 
         small {
             text-shadow: none;
+            font-family: 'Lato';
+            font-style: normal;
             font-size: 22px;
-            font-weight: lighter;
             color: @light-grey;
         }
     }
@@ -67,6 +62,7 @@
         font-weight: lighter;
     }
 
+    // Bubbles
     .bubble {
         -webkit-animation-name: bubble;
         -webkit-animation-iteration-count: infinite;
@@ -75,7 +71,7 @@
         width: @bubble-size;
         height: @bubble-size;
         border-radius: @bubble-size/2;
-        background: #3498DB;
+        background: @bubble-color;
         position: relative;
         bottom: @bubble-pos-bottom;
         opacity: 0;
@@ -129,7 +125,10 @@
     }
 }
 
+// Three major points
 .themes {
+    margin: 0 0 50px 0;
+
     h4 {
         color: @carrot;
     }
@@ -144,10 +143,30 @@
             color: @pumpkin;
         }
     }
+    p {
+        font-weight: lighter;
+    }
 }
 
+/*
+ * Page about
+ */
+.about {
+    h2 {
+        text-align: center;
+        font-family: 'Lobster Two', cursive;
+        font-weight: lighter;
+        font-style: italic;
+    }
+    p {
+        text-align: justify;
+        font-weight: lighter;
+    }
+}
 
-
+/*
+ * Animations
+ */
 @-webkit-keyframes bubble {
     0% { 
         bottom: @bubble-pos-bottom; 
