@@ -1,0 +1,171 @@
+/*
+ * Variables
+ */
+@ultralight-grey: #fbfbfb;
+@light-grey: rgb(153, 153 ,153);
+@carrot: #E67E22;
+@pumpkin: #D35400;
+@turquoise: #1ABC9C;
+@blue-green: #6dc5c8;
+
+@bubble-size: 20px;
+@bubble-pos-bottom: 0px;
+@bubble-pos-top: 550px;
+
+/* Mixin to generate random number;
+   int should be 0 or 1, 1 being to make it an integer 
+*/
+.makeRandom(@min: 0, @max: @min+1, @int: 0) { 
+  .checkInt() {
+    @getNum: `Math.random() * (@{max} - @{min} + @{int})`;
+    @base: unit(`@{int} == 1 ? Math.floor(@{getNum}) : @{getNum}`);
+  }
+  .checkInt();
+  @randNum: @base + @min;
+}
+
+/*
+ * Helpers
+ */
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+
+/*
+ * First page
+ */
+.featured {
+    background: @ultralight-grey;
+    margin: 0 0 60px 0;
+    padding: 35px 0 0 0;
+
+    h1 {
+        font-size: 70px;
+        line-height: 1;
+        color: @blue-green;
+
+        small {
+            font-size: 22px;
+            font-weight: lighter;
+            color: @light-grey;
+        }
+    }
+
+    a {
+        margin: 15px 0 10px 0;
+    }
+
+    p {
+        font-weight: lighter;
+    }
+
+    .bubble {
+        -webkit-animation-name: bubble;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        float: left;
+        width: @bubble-size;
+        height: @bubble-size;
+        border-radius: @bubble-size/2;
+        background: @turquoise;
+        position: relative;
+        bottom: @bubble-pos-bottom;
+        opacity: 0;
+    }
+
+    .bubble1 {
+        left: 5%;
+        -webkit-animation-delay: 1000ms;
+        -webkit-animation-duration: 1000ms;
+    }
+
+    .bubble2 {
+        left: 12.4%;
+        -webkit-animation-delay: 700ms;
+        -webkit-animation-duration: 1100ms;
+    }
+
+    .bubble3 {
+        left: 22.5%;
+        -webkit-animation-delay: 1200ms;
+        -webkit-animation-duration: 1300ms;
+    }
+
+    .bubble4 {
+        left: 40.4%;
+        -webkit-animation-delay: 1100ms;
+        -webkit-animation-duration: 700ms;
+    }
+
+    .bubble5 {
+        left: 50%;
+        -webkit-animation-delay: 1300ms;
+        -webkit-animation-duration: 800ms;
+    }
+    .bubble6 {
+        left: 70%;
+        -webkit-animation-delay: 1000ms;
+        -webkit-animation-duration: 1000ms;
+    }
+
+    .bubble7 {
+        left: 83%;
+        -webkit-animation-delay: 700ms;
+        -webkit-animation-duration: 1100ms;
+    }
+
+    .bubble8 {
+        left: 90%;
+        -webkit-animation-delay: 1200ms;
+        -webkit-animation-duration: 1300ms;
+    }
+}
+
+.themes {
+    h4 {
+        color: @carrot;
+    }
+    a {
+        color: @carrot;
+        transition: all .2 ease-in;
+
+        &:visited {
+            color: @carrot;
+        }
+        &:hover {
+            color: @pumpkin;
+        }
+    }
+}
+
+
+
+@-webkit-keyframes bubble {
+    0% { 
+        bottom: @bubble-pos-bottom; 
+    }
+
+    25% { 
+        opacity: 0.1; 
+    }
+
+    50% {
+        opacity: 0.2;
+        bottom: @bubble-pos-top/2;
+    }
+
+    75% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: @bubble-pos-top;
+    }
+}
