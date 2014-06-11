@@ -1,40 +1,127 @@
-/* --- align --- */
+/*
+ * Variables
+ */
+/* Mixin to generate random number;
+   int should be 0 or 1, 1 being to make it an integer 
+*/
+/*
+ * Helpers
+ */
 .align-left {
-    text-align: left;
+  text-align: left;
 }
 .align-right {
-    text-align: right;
+  text-align: right;
 }
 .align-center {
-    text-align: center;
+  text-align: center;
 }
-
+/*
+ * First page
+ */
 .featured {
-    background: #fbfbfb;
-    margin: 0 0 60px 0;
-    padding: 35px 0 30px 0;
+  background: #fbfbfb;
+  margin: 0 0 60px 0;
+  padding: 35px 0 0 0;
 }
 .featured h1 {
-    font-size: 70px;
-    line-height: 1;
-    color: #6dc5c8;
+  font-size: 70px;
+  line-height: 1;
+  color: #6dc5c8;
 }
 .featured h1 small {
-    font-size: 22px;
-    font-weight: lighter;
-    color: rgb(153, 153 ,153);
+  font-size: 22px;
+  font-weight: lighter;
+  color: #999999;
 }
 .featured a {
-    margin: 15px 0 10px 0;
+  margin: 15px 0 10px 0;
 }
-
-.themes p {
-    font-weight: lighter;
+.featured p {
+  font-weight: lighter;
+}
+.featured .bubble {
+  -webkit-animation-name: bubble;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #1abc9c;
+  position: relative;
+  bottom: 0px;
+  opacity: 0;
+}
+.featured .bubble1 {
+  left: 5%;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+.featured .bubble2 {
+  left: 12.4%;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 1100ms;
+}
+.featured .bubble3 {
+  left: 22.5%;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1300ms;
+}
+.featured .bubble4 {
+  left: 40.4%;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 700ms;
+}
+.featured .bubble5 {
+  left: 50%;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 800ms;
+}
+.featured .bubble6 {
+  left: 70%;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+.featured .bubble7 {
+  left: 83%;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 1100ms;
+}
+.featured .bubble8 {
+  left: 90%;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1300ms;
 }
 .themes h4 {
-    color: #E67E22;
+  color: #e67e22;
 }
-.themes a,
+.themes a {
+  color: #e67e22;
+  transition: all 0.2 ease-in;
+}
 .themes a:visited {
-    color: #D35400;
+  color: #e67e22;
+}
+.themes a:hover {
+  color: #d35400;
+}
+@-webkit-keyframes bubble {
+  0% {
+    bottom: 0px;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+    bottom: 275px;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 550px;
+  }
 }
