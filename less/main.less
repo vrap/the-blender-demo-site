@@ -9,6 +9,7 @@
 @pumpkin: #D35400;
 @turquoise: #1ABC9C;
 @blue-green: #6dc5c8;
+@peter-river: #3498DB;
 
 @bubble-size: 20px;
 @bubble-pos-bottom: 0px;
@@ -141,17 +142,20 @@
     margin: 0 0 50px 0;
 
     h4 {
-        color: @carrot;
+        color: @peter-river;
+        font-family: 'Pacifico', cursive;
+        font-size: 28pt;
+        font-weight: lighter;
     }
     a {
-        color: @carrot;
+        color: @peter-river;
         transition: all .2 ease-in;
 
         &:visited {
-            color: @carrot;
+            color: @peter-river;
         }
         &:hover {
-            color: @pumpkin;
+            color: darken(@peter-river, 20%);
         }
     }
     p {

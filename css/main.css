@@ -107,17 +107,20 @@
   margin: 0 0 50px 0;
 }
 .themes h4 {
-  color: #e67e22;
+  color: #3498db;
+  font-family: 'Pacifico', cursive;
+  font-size: 28pt;
+  font-weight: lighter;
 }
 .themes a {
-  color: #e67e22;
+  color: #3498db;
   transition: all 0.2 ease-in;
 }
 .themes a:visited {
-  color: #e67e22;
+  color: #3498db;
 }
 .themes a:hover {
-  color: #d35400;
+  color: #196090;
 }
 .themes p {
   font-weight: lighter;
