@@ -103,6 +103,59 @@
   -webkit-animation-delay: 1200ms;
   -webkit-animation-duration: 1300ms;
 }
+.featured .tequilla-sunrise {
+  margin: 10px auto 0 auto;
+  width: 500px;
+  height: 250px;
+}
+.featured .tequilla-sunrise .tequilla-glass {
+  margin: auto;
+  width: 100px;
+  height: 250px;
+  background: #ffffff;
+  opacity: 0.5;
+  border-radius: 5px 5px 10px 10px;
+}
+.featured .tequilla-sunrise .tequilla {
+  margin: auto;
+  position: relative;
+  bottom: 240px;
+  width: 90px;
+  height: 200px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 0, 0, 0.8)), to(rgba(241, 196, 15, 0.8)));
+  border-radius: 5px 5px 10px 10px;
+  -webkit-animation-name: pour;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0ms;
+  -webkit-animation-duration: 2500ms;
+}
+.featured .tequilla-sunrise .strow .strow-top {
+  background: rgba(0, 0, 0, 0.75);
+  position: relative;
+  top: -20px;
+  left: 280px;
+  width: 65px;
+  height: 7px;
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-20deg);
+  /* Opera, Chrome, and Safari */
+}
+.featured .tequilla-sunrise .strow .strow-bottom {
+  background: rgba(0, 0, 0, 0.75);
+  position: relative;
+  top: 98px;
+  left: 143px;
+  width: 215px;
+  height: 7px;
+  transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  /* IE 9 */
+  -webkit-transform: rotate(108deg);
+  /* Opera, Chrome, and Safari */
+}
 .themes {
   margin: 0 0 50px 0;
 }
@@ -158,5 +211,27 @@
   100% {
     opacity: 0;
     bottom: 550px;
+  }
+}
+@-webkit-keyframes pour {
+  0% {
+    height: 0;
+    bottom: 40px;
+  }
+  25% {
+    height: 50px;
+    bottom: 90px;
+  }
+  50% {
+    height: 100px;
+    bottom: 140px;
+  }
+  75% {
+    height: 150px;
+    bottom: 190px;
+  }
+  100% {
+    height: 200px;
+    bottom: 240px;
   }
 }

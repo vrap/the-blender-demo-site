@@ -16,6 +16,15 @@
 @bubble-pos-top: 550px;
 @bubble-color: #FFFFFF;
 
+@tequilla-glass-color: #fff;
+@tequilla-glass-width: 100px;
+@tequilla-glass-height: 250px;
+@tequilla-glass-opacity: 0.5;
+@tequilla-width: 90px;
+@tequilla-height: 200px;
+@tequilla-bottom: 240px;
+@tequilla-color: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 0, 0, 0.8)), to(rgba(241,196,15, 0.8)));
+
 /*
  * Helpers
  */
@@ -135,6 +144,65 @@
         -webkit-animation-delay: 1200ms;
         -webkit-animation-duration: 1300ms;
     }
+
+    // Tequilla sunrise
+    .tequilla-sunrise {
+        margin: 10px auto 0 auto;
+        width:500px;
+        height: 250px;
+
+        .tequilla-glass {
+            margin: auto;
+            width: @tequilla-glass-width;
+            height: @tequilla-glass-height;
+            background: @tequilla-glass-color;
+            opacity: @tequilla-glass-opacity;
+            border-radius: 5px 5px 10px 10px;
+        }
+
+        .tequilla {
+            margin: auto;
+            position: relative;
+            bottom: @tequilla-bottom;
+            width: @tequilla-width;
+            height: @tequilla-height;
+            background: @tequilla-color;
+            border-radius: 5px 5px 10px 10px;
+
+            -webkit-animation-name: pour;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 0ms;
+            -webkit-animation-duration: 2500ms;
+        }
+
+        .strow {        
+            .strow-top {
+                background: rgba(0, 0, 0, 0.75);
+                position: relative;
+                top: -20px;
+                left: 280px;
+                width: 65px;
+                height: 7px;
+
+                transform:rotate(-20deg);
+                -ms-transform:rotate(-20deg); /* IE 9 */
+                -webkit-transform:rotate(-20deg); /* Opera, Chrome, and Safari */
+            }
+            .strow-bottom {
+                background: rgba(0, 0, 0, 0.75);
+                position: relative;
+                top: 98px;
+                left: 143px;
+                width: 215px;
+                height: 7px;
+
+                transform:rotate(108deg);
+                -ms-transform:rotate(108deg); /* IE 9 */
+                -webkit-transform:rotate(108deg); /* Opera, Chrome, and Safari */
+            }
+        }
+    }
 }
 
 // Three major points
@@ -203,5 +271,32 @@
     100% {
         opacity: 0;
         bottom: @bubble-pos-top;
+    }
+}
+
+@-webkit-keyframes pour {
+    0% {
+        height: 0;
+        bottom: 40px;       
+    }
+
+    25% {
+        height: @tequilla-height*.25;
+        bottom: @tequilla-bottom - 3*50;
+    }
+
+    50% {
+        height: @tequilla-height*.5;
+        bottom: @tequilla-bottom - 2*50;
+    }
+
+    75% {
+        height: @tequilla-height*.75;
+        bottom: @tequilla-bottom - 50;
+    }
+
+    100% {
+        height: @tequilla-height;
+        bottom: @tequilla-bottom;
     }
 }
