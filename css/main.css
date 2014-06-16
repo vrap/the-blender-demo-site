@@ -99,6 +99,27 @@ html,
 body {
   height: 100%;
 }
+#toHome {
+  position: fixed;
+  bottom: 15px;
+  right: 60px;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  padding: 2px 4px 2px 2px;
+  background: rgba(120, 120, 120, 0.3);
+  text-align: center;
+  border-radius: 20px;
+}
+#toHome i {
+  font-size: 40px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+#toHome i:hover {
+  text-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3);
+}
 /*
  * Helpers
  */

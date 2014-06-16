@@ -162,18 +162,8 @@
             </div>
         </article>
 
-        <a href="#home" id="toHome">Home</a>
+        <a href="#home" id="toHome"><i class="fui-arrow-right"></i></a>
 
-        <script>
-            $(function() {
-                $('#toAbout, #toHome').on('click', function(e){
-                    e.preventDefault();
-                    var target= $(this).get(0).id == 'toAbout' ? $('#about') : $('#home');
-                    $('html, body').stop().animate({
-                       scrollTop: target.offset().top
-                    }, 1000);
-                });
-            });
-        </script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
