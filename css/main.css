@@ -76,6 +76,30 @@
   }
 }
 /*
+ * Fonts
+ */
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/flaticon.eot");
+  src: url("../fonts/flaticon/flaticon.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon/flaticon.woff") format("woff"), url("../fonts/flaticon/flaticon.ttf") format("truetype"), url("../fonts/flaticon/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+}
+.flaticon-github7:before {
+  content: "\e000";
+}
+html,
+body {
+  height: 100%;
+}
+/*
  * Helpers
  */
 .align-left {
@@ -266,13 +290,41 @@
 /*
  * Page about
  */
+.about {
+  min-height: 100%;
+  background: #00E0CB;
+}
 .about h2 {
   text-align: center;
+  color: #FFFFFF;
   font-family: 'Lobster Two', cursive;
   font-weight: lighter;
   font-style: italic;
 }
 .about p {
   text-align: justify;
-  font-weight: lighter;
+}
+/*
+ * Footer
+ */
+.foot h3 {
+  font-size: 10pt;
+}
+.foot p {
+  font-size: 10pt;
+}
+.foot i:before {
+  font-size: 40px;
+}
+.foot a {
+  color: #00E0CB;
+  transition: all 300ms ease-out;
+}
+.foot a:hover {
+  color: #00c1af;
+}
+.foot img {
+  width: 100px;
+  border: 0;
+  margin: auto;
 }
