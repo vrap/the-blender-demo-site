@@ -6,6 +6,7 @@
         <title>The Blender</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logo_1.png">
 
         <!-- Loading Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,15 +16,15 @@
 
         <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="img/logo_1.png">
+
+        <script src="./js/vendor/jquery-1.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Header part -->
-        <section class="featured">
-            <a id="home"></a>
+        <section class="featured" id="home">
             <div class="container align-center"> 
                 <div class="row ">
                     <div class="col-md-6 col-md-offset-3">
@@ -44,7 +45,7 @@
                         </h1>
                         <a href="https://github.com/vrap/the-blender-doc/wiki" class="btn btn-lg btn-perso">Documentation</a>
                         
-                        <a href="#about" class="btn btn-lg btn-perso">About the project</a>
+                        <a href="#about" id="toAbout" class="btn btn-lg btn-perso">About the project</a>
                     </div>
                 </div>
                 <div class="bubble bubble1"></div>
@@ -90,8 +91,7 @@
             </div>
         </section>
         <!-- About the project -->
-        <article class="about">
-            <a id="about"></a>
+        <article class="about" id="about">
             <div class="container">
                 <h2>About the project</h2>
                 <section>
@@ -161,5 +161,19 @@
                 </div>
             </div>
         </article>
+
+        <a href="#home" id="toHome">Home</a>
+
+        <script>
+            $(function() {
+                $('#toAbout, #toHome').on('click', function(e){
+                    e.preventDefault();
+                    var target= $(this).get(0).id == 'toAbout' ? $('#about') : $('#home');
+                    $('html, body').stop().animate({
+                       scrollTop: target.offset().top
+                    }, 1000);
+                });
+            });
+        </script>
     </body>
 </html>
