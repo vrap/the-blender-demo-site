@@ -223,20 +223,20 @@ body {
     margin: 0 0 50px 0;
 
     h4 {
-        color: @peter-river;
+        color: @indian-red;
         font-family: 'Pacifico', cursive;
         font-size: 28pt;
         font-weight: lighter;
     }
     a {
-        color: @peter-river;
+        color: @indian-red;
         transition: all .2 ease-in;
 
         &:visited {
-            color: @peter-river;
+            color: @indian-red;
         }
         &:hover {
-            color: darken(@peter-river, 20%);
+            color: darken(@indian-red, 20%);
         }
     }
     p {
@@ -249,7 +249,7 @@ body {
  */
 .about {
     min-height: 100%;
-    background: #00E0CB; 
+    background: @light-blue-green; 
 
     h2 {
         text-align: center;
@@ -257,9 +257,23 @@ body {
         font-family: 'Lobster Two', cursive;
         font-weight: lighter;
         font-style: italic;
+        margin-bottom: 30px;
+    }
+    h3 {
+        color: #FFFFFF;
+        font-family: 'Pacifico', cursive;
+        font-size: 22pt;
+        font-weight: lighter;
     }
     p {
         text-align: justify;
+    }
+    a {
+        color: rgb(251, 251, 251);
+
+        &:hover {
+            color: darken(#fff, 10%)
+        }
     }
 }
 
@@ -273,7 +287,7 @@ body {
     }
 
     p {
-        font-size: 10pt;        
+        font-size: 10pt;  
     }
 
     i {
@@ -283,11 +297,11 @@ body {
     }
 
     a {
-        color: #00E0CB;
+        color: @light-blue-green;
         transition: all 300ms ease-out;
     
         &:hover {
-            color: darken(#00E0CB, 6%);
+            color: darken(@light-blue-green, 6%);
         }
     }
     

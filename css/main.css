@@ -269,20 +269,20 @@ body {
   margin: 0 0 50px 0;
 }
 .themes h4 {
-  color: #3498db;
+  color: #ec4863;
   font-family: 'Pacifico', cursive;
   font-size: 28pt;
   font-weight: lighter;
 }
 .themes a {
-  color: #3498db;
+  color: #ec4863;
   transition: all 0.2 ease-in;
 }
 .themes a:visited {
-  color: #3498db;
+  color: #ec4863;
 }
 .themes a:hover {
-  color: #196090;
+  color: #bb132f;
 }
 .themes p {
   font-weight: lighter;
@@ -292,7 +292,7 @@ body {
  */
 .about {
   min-height: 100%;
-  background: #00E0CB;
+  background: #00e0cb;
 }
 .about h2 {
   text-align: center;
@@ -300,9 +300,22 @@ body {
   font-family: 'Lobster Two', cursive;
   font-weight: lighter;
   font-style: italic;
+  margin-bottom: 30px;
+}
+.about h3 {
+  color: #FFFFFF;
+  font-family: 'Pacifico', cursive;
+  font-size: 22pt;
+  font-weight: lighter;
 }
 .about p {
   text-align: justify;
+}
+.about a {
+  color: #fbfbfb;
+}
+.about a:hover {
+  color: #e6e6e6;
 }
 /*
  * Footer
@@ -317,7 +330,7 @@ body {
   font-size: 40px;
 }
 .foot a {
-  color: #00E0CB;
+  color: #00e0cb;
   transition: all 300ms ease-out;
 }
 .foot a:hover {
