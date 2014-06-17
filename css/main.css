@@ -1,3 +1,6 @@
+/*
+ * General anims
+ */
 @keyframes bubble {
   0% {
     bottom: 0px;
@@ -75,6 +78,9 @@
     -webkit-transform: rotate(0deg);
   }
 }
+/*
+ * Firefox anims
+ */
 @-moz-keyframes bubble {
   0% {
     bottom: 0px;
@@ -152,6 +158,9 @@
     -webkit-transform: rotate(0deg);
   }
 }
+/*
+ * Chrome, Opera and Safari anims
+ */
 @-webkit-keyframes bubble {
   0% {
     bottom: 0px;
@@ -249,10 +258,16 @@
 .flaticon-github7:before {
   content: "\e000";
 }
+/*
+ * General
+ */
 html,
 body {
   height: 100%;
 }
+/*
+ * Back to top button
+ */
 #toHome {
   position: fixed;
   bottom: 15px;
