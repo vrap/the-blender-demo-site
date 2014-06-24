@@ -1,0 +1,128 @@
+<article>
+    <section>
+        <h1>Getting started</h1>
+
+        <p>La documentation suivante est crée pour vous permettre de fabriquer vos propres modules et d'assembler The Blender.<br />
+        Nous avons essayés de rendre ces explications les plus claires possibles, mais les principes, techniques et technologies utilisés ne sont pas forcément simples. Si vous trouvez que la documentation peut être améliorée, n'hésitez pas à nous en faire part.<br />
+        Enjoy!</p>
+    </section>
+
+    <section>
+        <h1>Installation</h1>
+
+        <p>Il y a 2 parties que vous pouvez installer :</p>
+
+        <ul>
+            <li><a href="#application">l'application</a></li>
+            <li><a href="#community">la communauté</a></li>
+        </ul>
+    </section>
+
+    <div id="application">
+        <h1>Application</h1>
+
+        <section>
+            <h1>Pré-requis</h1>
+            
+            <p>MEAN est un acronyme pour MongoDB, Express, AngularJs et NodeJs. The Blender utilise cette architecture.</p>
+
+            <b>Node.js</b>
+            <p><a href="http://nodejs.org/download/">Téléchargez</a> et installez Node.js</p>
+
+            <b>MongoDB</b>
+            <p><a href="http://www.mongodb.org/downloads">Téléchargez</a> et installez MongoDB. Assurez vous qu'il tourne sur le port par défaut (27017).</p>
+
+            <b>NPM</b>
+            <p><a href="https://www.npmjs.org/">Gestionnaire de paquets</a> de Node.js.</p>
+        </section>
+
+        <section>
+            <h1>Installation</h1>
+
+            <pre>npm install the-blender</pre>
+        </section>
+
+        <section>
+            <h1>Options</h1>
+
+            <p>L'application a besoin d'être configurée en fonction de votre propre environnement. Nous essayé de la réduire au minimum, afin que cette étape reste simple.</p>
+
+            <p>Ci-dessous le fichier de configuration générique de l'application. Nous recommandons de ne pas le modifier, mais d'en faire une copie et de modifier celle-ci.</p>
+
+            <pre>
+// Copie du fichier original vers un fichier personnalisé
+cp config.sample.js config.js
+            </pre>
+            
+            <pre>
+/**
+ * config.js
+ */
+module.exports = {
+    database: {
+        url: 'mongodb://localhost:25486/the-blender'
+    },
+    master: {
+        url: 'http://localhost:8080/'
+    },
+    server: {
+        port: 5555
+    },
+    board: {
+        port: '/dev/ttyACM0',
+        debug: true,
+        cart: {
+            A: {
+                pwm: 3,
+                brake: 9,
+                dir: 12
+            },
+            B: {
+                pwm: 11,
+                brake: 8,
+                dir: 13
+            }
+        }
+    }
+};
+            </pre>
+        </section>
+
+        <section>
+            <h1>Utilisation</h1>
+
+
+        </section>
+    </div>
+
+    <div id="community">
+        <h1>Communauté</h1>
+
+        <section>
+            <h1>Pré-requis</h1>
+            
+            <p>MEAN est un acronyme pour MongoDB, Express, AngularJs et NodeJs. The Blender utilise cette architecture.</p>
+
+            <b>Node.js</b>
+            <p><a href="http://nodejs.org/download/">Téléchargez</a> et installez Node.js</p>
+        </section>
+
+        <section>
+            <h1>Installation</h1>
+
+
+        </section>
+
+        <section>
+            <h1>Options</h1>
+
+            
+        </section>
+
+        <section>
+            <h1>Utilisation</h1>
+
+            
+        </section>
+    </div>
+</article>
