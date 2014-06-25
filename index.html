@@ -8,162 +8,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="img/logo_1.png">
 
-        <!-- Loading Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <!-- Loading Flat UI -->
-        <link href="css/flat-ui.css" rel="stylesheet">
         <!-- Loading main CSS -->
-        <link href="css/main.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
         <!-- Importing Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <!-- Loading JS files -->
-        <script src="./js/vendor/jquery-1.8.3.min.js"></script>
+        <script src="./js/vendor/angular/angular.min.js"></script>
+        <script src="./js/vendor/angular/angular-route.min.js"></script>
+        <script src="./js/vendor/angular/angular-animate.min.js"></script>
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- Header part -->
-        <section class="featured" id="home">
-            <div class="container align-center"> 
-                <div class="row ">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="tequilla-sunrise">
-                            <div class="strow">
-                                <div class="strow-bottom"></div>
-                                <div class="strow-top"></div>
-                            </div>
-                            <div class="tequilla-glass"></div>
-                            <div class="tequilla"></div>
-                        </div>
-                        
-                        <h1>The Blender
-                            <small>
-                                <br>
-                                An automatic and connected cocktail dispenser               
-                            </small>
-                        </h1>
-                        <a href="https://github.com/vrap/the-blender-doc/wiki" class="btn btn-lg btn-perso">Documentation</a>
-                        
-                        <a href="#about" id="toAbout" class="btn btn-lg btn-perso">About the project</a>
-                    </div>
-                </div>
-                <div class="bubble bubble1"></div>
-                <div class="bubble bubble2"></div>
-                <div class="bubble bubble3"></div>
-                <div class="bubble bubble4"></div>
-                <div class="bubble bubble5"></div>
-                <div class="bubble bubble6"></div>
-                <div class="bubble bubble7"></div>
-                <div class="bubble bubble8"></div>
-            </div>
-        </section>
-        <!-- Three main themes -->
-        <section class="themes">
-            <div class="container"> 
-                <div class="row mar-bot40">
-                    <div class="col-lg-4" >
-                        <div class="align-center">
-                            <h4>Modularity</h4>
-                            <p>
-                                The project itself was designed to be modular and with openhardware and software let anyone improving the system and making the machine.
-                            </p>
-                        </div>
-                    </div>
-                        
-                    <div class="col-lg-4" >
-                        <div class="align-center">
-                            <h4>Simplicity </h4>
-                            <p>
-                                The simplicity aspect of the project has been in our mind throughout the duration of the project and this is why we have documented all aspect of the project. Learn more with <a href="https://github.com/vrap/the-blender-doc/wiki">the documentation</a>
-                            </p>
-                        </div>
-                    </div>
-                
-                    <div class="col-lg-4" >
-                        <div class="align-center">
-                            <h4>lowcost</h4>
-                            <p>We think that existing cocktail dispenser are too expensive at this time and it's more fun to let anyone to make his Blender by themselves.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About the project -->
-        <article class="about" id="about">
-            <div class="container">
-                <h2>About the project</h2>
-                <section>
-                    <h3>The context</h3>
-                    <p>
-                        <b>4 developers. 4 weeks. 1 machine.</b><br>
-                        The project started during a workshop about the Internet of Things in May 2014.<br>
-                        In a first time, we experimented developping with Arduino. The hard part was the electronic one. We are not electronic egineers but we learned a lot with the greatful help of the workshop speaker, <a href="https://twitter.com/ClementQuinson" target="_blank">Clement Quinson</a>. Then, we started to use the FacLab material as 3D printers, laser cuters, etc. This time was the begining of the hardware conception.<br>
-                        In a second time, we designed the web application that allow you to control your Blender.<br>
-                        After four weeks of hard work, the Blender and its application are availables !
-                    </p>
-                    <h3>The philosophy</h3>
-                    <p>
-                        The project itself was designed to be modular, with openhardware and software let anyone improving the system and making the machine. This possibility let you:
-                        <ul>
-                            <li>Clone The blender with a lasercutter, 3D printer and some electronic materials.</li>
-                            <li>Fork <a href="https://github.com/vrap/the-blender" target="_blank">The blender</a>, to improve it and propose new feature for the community.</li>
-                            <li>Create or join a <a href="https://github.com/vrap/the-blender-community" target="_blank">community</a> of cocktail lover and share your creations with your friends.</li>
-                            <li>Expand your Blender with new module (also printable and lasercuttable).</li>
-                        </ul>
-                    </p>
-                    <p>
-                        The simplicity aspect of the project has been in our mind throughout the duration of the project and this is why we have documented all parts in this wiki. Here you can found some informations about:
-                        <ul>
-                            <li>Materials requirements</li>
-                            <li>Hardware plans</li>
-                            <li>Software explanations</li>
-                            <li>And a lot more stuff that we think it's necessary for you</li>
-                        </ul>
-                    </p>
-                    <p>
-                        If you think there is a hole about some informations you can improve it by making a pull request or let us know by adding an issue to the <a href="https://www.github.com/vrap/the-blender-doc/" target="_blank">documentation repository</a>.
-                    </p>
-                    <p>
-                        And last but not least, the lowcost aspect was a constraint of our project since we have not a big budget, think that existing cocktail dispenser are too expensive at this time and because we think that it's more fun to let anyone to make his Blender by themselves. In order to respect this constraint, we had to search some solutions to make our valve with a servo-motor (180° for a reducted price), using some reusable elements and crafting all we can with our hands and equipments which can be found in Fablab (like the <a href="http://www.faclab.org" target="_blank">faclab</a> of our university).
-                    </p>
-                    <p>
-                        <b>Hope you enjoy this project, feel free to comment and improve it.</b>
-                    </p>
-                </section>
-            </div>
-            
-        </article>
-        <!-- Footer -->
-        <article class="foot">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>A project realized by the VRAP team.</h3>
-                    </div>
-                    <div class="col-md-8">
-                        <p>
-                            The VRAP team is composed by 4 students of the <a href="http://www.lp-dw.com/" target="_blank">Web and Mobile Developer Professional Licence of Cergy-Pontoise University</a> with complementaries profiles.
-                        </p>
-                        <a href="https://github.com/vrap" target="_blank" title="Find us on Github"><i class="flaticon-github7"></i></a>
-                    </div>
-                    <div class="col-md-4">
-                        <p>A big thanks to</p>
-                        <div class="col-md-6">
-                            <a href="http://www.u-cergy.fr/fr/index.html" target="_blank"><img src="./img/logo_ucp.png" title="Cergy Pontoise University"></a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="http://www.faclab.org/" target="_blank"><img src="./img/logo_fl.png" title="FacLab UCP"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <!-- Back to top button -->
-        <a href="#home" id="toHome"><i class="fui-arrow-right"></i></a>
+    <body ng-app="the-blender">
+        
+        <div class="view page {{ pageClass }}" ng-view></div>
         <!-- Main JS -->
         <script src="./js/main.js"></script>
+        <script src="./js/the-blender/controller.js"></script>
+        <script src="./js/the-blender/routes.js"></script>
+        <script src="./js/the-blender/directives.js"></script>
+        <script src="./js/vendor/showdown-master/compressed/showdown.js"></script>
     </body>
 </html>
