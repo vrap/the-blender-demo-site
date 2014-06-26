@@ -92,6 +92,9 @@ h1.title-lg {
 .back:hover {
   opacity: 0.8;
 }
+.center {
+  text-align: center;
+}
 /*
 Button
  */
@@ -102,6 +105,8 @@ Button
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  border: 0;
+  cursor: pointer;
 }
 .btn.btn-master {
   background-color: #d84359;
@@ -274,6 +279,9 @@ Button
   display: block;
   padding: 10px 25px;
 }
+/**
+ * Community
+ */
 .contener-community {
   width: 100%;
   height: 100%;
@@ -292,26 +300,101 @@ Button
   margin-bottom: 30px;
   padding: 30px 280px 0px 280px;
 }
+@media only screen and (max-device-width: 1024px), only screen and (max-width: 1024px) {
+  .contener-community .content h1 {
+    padding: 30px 110px 0 0;
+  }
+}
 .contener-community .content .header {
   width: 100%;
   padding: 50px 280px 50px 280px;
   background-color: #00e0cb;
-  height: 100%;
+  height: 81.3%;
   text-align: right;
-  position: relative;
 }
-.contener-community .content .header .tequilla-sunrise {
-  position: absolute;
-  right: 90px;
-  top: 10px;
+@media only screen and (max-device-width: 1024px), only screen and (max-width: 1024px) {
+  .contener-community .content .header {
+    padding: 0 15px 0 10px;
+  }
+}
+.contener-community .content .header h1 {
+  color: #fafafa;
+  padding: 0;
 }
 .contener-community .content .header .about {
+  width: 50%;
+  float: left;
   color: #fafafa;
   font-size: 1.2em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 .contener-community .content .header .about .btn {
   margin: 30px 0;
   display: inline-block;
+}
+.contener-community .content .header .about .circle-container {
+  width: 33.3333%;
+  float: left;
+}
+.contener-community .content .header .about .circle-container .circle {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: #04b8a5;
+  border-radius: 75px;
+  color: #fafafa;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+.contener-community .content .header .about .circle-container .circle .number {
+  font-size: 3.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+@media only screen and (max-device-width: 1024px), only screen and (max-width: 1024px) {
+  .contener-community .content .header .about {
+    width: 100%;
+    margin: 20px 5px 20px 5px;
+  }
+}
+.contener-community .content .header .panel-register {
+  margin: 0;
+}
+.contener-community .content .header .panel-register .btn {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.contener-community .content .header .panel-register .form-group .alert,
+.contener-community .content .header .panel-register .form-group input {
+  padding: 10px;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #aaa;
+  border: 0;
+  margin: 0 0 5px;
+  width: 80%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.contener-community .content .header .panel-register .form-group .alert {
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fafafa;
+}
+.contener-community .content .header .panel-register .form-group .alert.alert-danger {
+  background: #ec4863;
+}
+.contener-community .content .header .panel-register .form-group .alert.alert-success {
+  background: #04d1bc;
 }
 .contener-community .nav {
   text-align: right;
