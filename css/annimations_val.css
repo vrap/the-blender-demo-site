@@ -245,14 +245,7 @@ font
     -webkit-transform: rotate(0deg);
   }
 }
-/*
- * First page
- */
-.featured {
-  margin: 0;
-  padding: 0;
-}
-.featured .bubble {
+.bubble {
   animation-name: bubble;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -271,7 +264,7 @@ font
   opacity: 0;
   z-index: -1;
 }
-.featured .bubble1 {
+.bubble1 {
   left: 5%;
   animation-delay: 400ms;
   animation-duration: 1400ms;
@@ -280,7 +273,7 @@ font
   -webkit-animation-delay: 400ms;
   -webkit-animation-duration: 1400ms;
 }
-.featured .bubble2 {
+.bubble2 {
   left: 12.4%;
   animation-delay: 100ms;
   animation-duration: 1500ms;
@@ -289,7 +282,7 @@ font
   -webkit-animation-delay: 100ms;
   -webkit-animation-duration: 1500ms;
 }
-.featured .bubble3 {
+.bubble3 {
   left: 22.5%;
   animation-delay: 600ms;
   animation-duration: 1800ms;
@@ -298,7 +291,7 @@ font
   -webkit-animation-delay: 600ms;
   -webkit-animation-duration: 1800ms;
 }
-.featured .bubble4 {
+.bubble4 {
   left: 40.4%;
   animation-delay: 500ms;
   animation-duration: 1100ms;
@@ -307,7 +300,7 @@ font
   -webkit-animation-delay: 500ms;
   -webkit-animation-duration: 1100ms;
 }
-.featured .bubble5 {
+.bubble5 {
   left: 50%;
   animation-delay: 700ms;
   animation-duration: 1200ms;
@@ -316,7 +309,7 @@ font
   -webkit-animation-delay: 700ms;
   -webkit-animation-duration: 1200ms;
 }
-.featured .bubble6 {
+.bubble6 {
   left: 70%;
   animation-delay: 400ms;
   animation-duration: 1400ms;
@@ -325,7 +318,7 @@ font
   -webkit-animation-delay: 400ms;
   -webkit-animation-duration: 1400ms;
 }
-.featured .bubble7 {
+.bubble7 {
   left: 83%;
   animation-delay: 100ms;
   animation-duration: 1100ms;
@@ -334,7 +327,7 @@ font
   -webkit-animation-delay: 100ms;
   -webkit-animation-duration: 1100ms;
 }
-.featured .bubble8 {
+.bubble8 {
   left: 90%;
   animation-delay: 600ms;
   animation-duration: 1300ms;

@@ -5,64 +5,63 @@
 	<div class="content">
 
 		<h1>The community</h1>
-		
+
+
+
 		<section class="header">
-			
-			<p class="about">
-				You can create an account to connect to your application on your smartphone.
-				You shall create, drink, share cocktails with a large community of cocktail drinkers !
-				
+            <p class="about">
+                You can create an account to connect to your application on your smartphone.
+                You shall create, drink, share cocktails with a large community of cocktail drinkers!
+            </p>
 
-				<a class="btn btn-community">let's go !</a>
+            <div class="about panel panel-register">
 
-			</p>
+                <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
 
-			<div class="tequilla-sunrise">
-                <div class="strow">
-                    <div class="strow-bottom"></div>
-                    <div class="strow-top"></div>
+                    <!-- NAME -->
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Name" ng-model="user.name" required>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email" ng-model="user.email" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password" ng-model="user.password" required>
+                    </div>
+
+                    <!-- Password Validate -->
+                    <div class="form-group">
+                        <input type="password" name="password_confirm" class="form-control" placeholder="Confirm password" ng-model="user.confPassword" required>
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="btn btn-community">Join the community</button>
+                </form>
+            </div>
+            <div class="about">
+                <div class="circle-container">
+                    <div class="circle">
+                        <span class="number">250</span><br/>cocktails
+                    </div>
                 </div>
-                <div class="tequilla-glass"></div>
-                <div class="tequilla"></div>
+
+                <div class="circle-container">
+                    <div class="circle circle-2">
+                        <span class="number">94</span><br/>drinkers
+                    </div>
+                </div>
+
+                <div class="circle-container">
+                    <div class="circle circle-3">
+                        <span class="number">462</span><br/>ingredients
+                    </div>
+                </div>
             </div>
 
 		</section>
-
-
-		<section class="panel panel-register">
-				
-			<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
-
-			<!-- NAME -->
-			<div class="form-group">
-				<label>Name</label>
-				<input type="text" name="name" class="form-control" ng-model="name" required>
-			</div>
-
-			<!-- EMAIL -->
-			<div class="form-group">
-				<label>Email</label>
-				<input type="email" name="email" class="form-control" ng-model="user.email" required>
-			</div>
-
-			<!-- Password -->
-			<div class="form-group">
-				<label>Password</label>
-				<input type="password" name="password" class="form-control" ng-model="user.password" required>
-			</div>
-
-			<!-- Password Validate -->
-			<div class="form-group">
-				<label>Confirm password</label>
-				<input type="password" name="password_confirm" class="form-control" ng-model="user.password" required>
-			</div>
-
-			<!-- SUBMIT BUTTON -->
-			<button type="submit" class="btn btn-primary">Submit</button>
-
-			</form>
-
-		</section>
-
 	</div>
 </div>
