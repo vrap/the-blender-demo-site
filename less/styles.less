@@ -419,6 +419,7 @@ Button
                 }
 
                 .form-group {
+                    .alert,
                     input {
                         padding:10px;
                         font-size:1em;
@@ -431,7 +432,23 @@ Button
                         -moz-border-radius: 3px;
                         border-radius: 3px;
                     }
+
+                    .alert {
+                        float: right;
+                        .open-sans-regular;
+                        color: @light;
+
+                        &.alert-danger {
+                            background: @c-master;
+                        }
+                        &.alert-success {
+                            background: @c-community-darken;
+                        }
+                    }
                 }
+
+
+
             }
 		}
 

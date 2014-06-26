@@ -15,12 +15,11 @@
             </p>
 
             <div class="about panel panel-register">
-
-                <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+                <form name="userForm" ng-submit="register(userForm.$valid)" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
 
                     <!-- NAME -->
                     <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Name" ng-model="user.name" required>
+                        <input type="text" name="name" class="form-control" placeholder="Name" ng-model="user.username" required>
                     </div>
 
                     <!-- EMAIL -->
@@ -40,24 +39,35 @@
 
                     <!-- SUBMIT BUTTON -->
                     <button type="submit" class="btn btn-community">Join the community</button>
+
+                    <div class="form-group">
+                        <div class="alert alert-danger" ng-show="noValid">
+                            {{ errorMessage }}
+                        </div>
+                        <div class="alert alert-success" ng-show="valid">
+                            {{ successMessage }}
+                        </div>
+                    </div>
+
                 </form>
+
             </div>
             <div class="about">
                 <div class="circle-container">
                     <div class="circle">
-                        <span class="number">250</span><br/>cocktails
+                        <span class="number">{{ nbRecipes }}</span><br/>cocktails
                     </div>
                 </div>
 
                 <div class="circle-container">
                     <div class="circle circle-2">
-                        <span class="number">94</span><br/>drinkers
+                        <span class="number">{{ nbUsers }}</span><br/>drinkers
                     </div>
                 </div>
 
                 <div class="circle-container">
                     <div class="circle circle-3">
-                        <span class="number">462</span><br/>ingredients
+                        <span class="number">{{ nbIngredients }}</span><br/>ingredients
                     </div>
                 </div>
             </div>

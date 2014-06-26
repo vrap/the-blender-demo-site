@@ -370,6 +370,7 @@ Button
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+.contener-community .content .header .panel-register .form-group .alert,
 .contener-community .content .header .panel-register .form-group input {
   padding: 10px;
   font-size: 1em;
@@ -382,6 +383,18 @@ Button
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+.contener-community .content .header .panel-register .form-group .alert {
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fafafa;
+}
+.contener-community .content .header .panel-register .form-group .alert.alert-danger {
+  background: #ec4863;
+}
+.contener-community .content .header .panel-register .form-group .alert.alert-success {
+  background: #04d1bc;
 }
 .contener-community .nav {
   text-align: right;

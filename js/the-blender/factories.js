@@ -4,7 +4,7 @@ angular.module('blenderFactory', [])
 
 	return {
 		uri : {
-			community : 'http://community.the-blender.io'
+			community : 'http://localhost:9999'//'http://community.the-blender.io'
 		}
 		
 	}
@@ -36,7 +36,26 @@ angular.module('blenderFactory', [])
                 return defered.promise;
 
 		 	}
-	 	}
+	 	},
+        users: {
+            register: function (user) {
+                var defered = $q.defer();
+
+                return $http.post(
+                    ConfigService.uri.community + '/register',
+                    'username=' + user.username + '&email=' + user.email + '&password=' + user.password,
+                    {
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                    }
+                    )
+                    .success(function(response){
+                        defered.resolve(response);
+                    })
+                    .error(function(response){
+                        defered.fail(response);
+                    });
+            }
+        }
 	 }
 	 	
 
