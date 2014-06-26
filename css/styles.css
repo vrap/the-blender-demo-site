@@ -28,9 +28,9 @@ Mixines
 Icone
  */
 @font-face {
-  font-family: "Flaticon_back";
-  src: url("../fonts/flaticon/flaticon_back.eot");
-  src: url("../fonts/flaticon/flaticon_back.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon/flaticon_back.woff") format("woff"), url("../fonts/flaticon/flaticon_back.ttf") format("truetype"), url("../fonts/flaticon/flaticon_back.svg") format("svg");
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/flaticon_other.eot");
+  src: url("../fonts/flaticon/flaticon_other.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon/flaticon_other.woff") format("woff"), url("../fonts/flaticon/flaticon_other.ttf") format("truetype"), url("../fonts/flaticon/flaticon_other.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,12 +38,19 @@ Icone
 [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after,
 [class*=" flaticon-"]:after {
-  font-family: Flaticon_back;
-  font-size: 50px;
+  font-family: Flaticon;
+  font-size: 20px;
   font-style: normal;
 }
-.flaticon-arrow72:before {
+.flaticon-android2:before {
   content: "\e000";
+}
+.flaticon-arrow72:before {
+  content: "\e001";
+  font-size: 50px;
+}
+.flaticon-github7:before {
+  content: "\e002";
 }
 /*
 General
@@ -107,6 +114,9 @@ Button
   border-radius: 5px;
   border: 0;
   cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 .btn.btn-master {
   background-color: #d84359;
@@ -192,11 +202,11 @@ Button
  * Doc
  */
 .contener-doc .content {
+  overflow: auto;
   height: 100%;
   width: 100%;
   position: absolute;
   padding: 30px 280px 200px;
-  padding-bottom: 300px;
 }
 .contener-doc .content h1 {
   color: #d84359;
@@ -309,16 +319,12 @@ Button
  * Community
  */
 .contener-community {
+  background-color: #fafafa;
   width: 100%;
   height: 100%;
 }
-.contener-community .content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.contener-community h1 {
   text-align: right;
-}
-.contener-community .content h1 {
   color: #22c9c3;
   font-size: 3em;
   margin: 0;
@@ -327,27 +333,32 @@ Button
   padding: 30px 280px 0px 280px;
 }
 @media only screen and (max-device-width: 1024px), only screen and (max-width: 1024px) {
-  .contener-community .content h1 {
+  .contener-community h1 {
     padding: 30px 110px 0 0;
   }
 }
-.contener-community .content .header {
+.contener-community .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  background-color: #00e0cb;
+}
+.contener-community .content .page {
   width: 100%;
   padding: 50px 280px 50px 280px;
-  background-color: #00e0cb;
-  height: 81.3%;
   text-align: right;
 }
 @media only screen and (max-device-width: 1024px), only screen and (max-width: 1024px) {
-  .contener-community .content .header {
+  .contener-community .content .page {
     padding: 0 15px 0 10px;
   }
 }
-.contener-community .content .header h1 {
+.contener-community .content .page h1 {
   color: #fafafa;
   padding: 0;
 }
-.contener-community .content .header .about {
+.contener-community .content .page .about {
   width: 50%;
   float: left;
   color: #fafafa;
@@ -356,15 +367,15 @@ Button
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-.contener-community .content .header .about .btn {
+.contener-community .content .page .about .btn {
   margin: 30px 0;
   display: inline-block;
 }
-.contener-community .content .header .about .circle-container {
+.contener-community .content .page .about .circle-container {
   width: 33.3333%;
   float: left;
 }
-.contener-community .content .header .about .circle-container .circle {
+.contener-community .content .page .about .circle-container .circle {
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -377,27 +388,27 @@ Button
   text-align: center;
   padding: 10px 0 0 0;
 }
-.contener-community .content .header .about .circle-container .circle .number {
+.contener-community .content .page .about .circle-container .circle .number {
   font-size: 3.2em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 @media only screen and (max-device-width: 1024px), only screen and (max-width: 1024px) {
-  .contener-community .content .header .about {
+  .contener-community .content .page .about {
     width: 100%;
     margin: 20px 5px 20px 5px;
   }
 }
-.contener-community .content .header .panel-register {
+.contener-community .content .page .panel-register {
   margin: 0;
 }
-.contener-community .content .header .panel-register .btn {
+.contener-community .content .page .panel-register .btn {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-.contener-community .content .header .panel-register .form-group .alert,
-.contener-community .content .header .panel-register .form-group input {
+.contener-community .content .page .panel-register .form-group .alert,
+.contener-community .content .page .panel-register .form-group input {
   padding: 10px;
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
@@ -410,17 +421,41 @@ Button
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.contener-community .content .header .panel-register .form-group .alert {
+.contener-community .content .page .panel-register .form-group .alert {
   float: right;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #fafafa;
 }
-.contener-community .content .header .panel-register .form-group .alert.alert-danger {
+.contener-community .content .page .panel-register .form-group .alert.alert-danger {
   background: #ec4863;
 }
-.contener-community .content .header .panel-register .form-group .alert.alert-success {
+.contener-community .content .page .panel-register .form-group .alert.alert-success {
   background: #04d1bc;
+}
+.contener-community .content .page.register {
+  background-color: #22c9c3;
+  padding: 30px;
+  padding-bottom: 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 50%;
+  float: right;
+  margin-right: 280px;
+  margin-top: 80px;
+}
+.contener-community .content .page.register h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.3em;
+  line-height: 0.9em;
+  color: #fafafa;
+  margin-bottom: 40px;
+}
+.contener-community .content .page.register .btn i {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #bc3a4b;
 }
 .contener-community .nav {
   text-align: right;
@@ -457,15 +492,21 @@ Button
   position: fixed;
   left: 0;
   padding: 30px;
+  padding-top: 40px;
   color: #fafafa;
 }
 .contener-about .content {
   background: #fafafa;
   color: #34495e;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 .contener-about .content .sub-content {
   width: 50%;
   margin: auto;
+}
+.contener-about .content .sub-content .video {
+  text-align: center;
 }
 .contener-about .content .sub-content h1 {
   text-align: left;
@@ -532,7 +573,8 @@ Button
 /*
 Annimation
  */
-.view {
+.view,
+page.register {
   -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -546,12 +588,14 @@ Annimation
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   /* easeOutQuad */
 }
-.view.ng-enter {
+.view.ng-enter,
+page.register {
   opacity: 0;
   transition-duration: 250ms;
   -webkit-transition-duration: 250ms;
 }
-.view.ng-enter-active {
+.view.ng-enter-active,
+page.register {
   opacity: 1;
 }
 .view.ng-leave {
@@ -570,23 +614,16 @@ Annimation
 }
 .view.page-doc.ng-enter {
   opacity: 1;
-  transition-duration: 250ms;
-  -webkit-transition-duration: 250ms;
 }
 .view.page-doc.ng-enter-active {
   opacity: 1;
 }
 .view.page-doc.ng-leave {
   opacity: 1;
-  transition-duration: 250ms;
-  -webkit-transition-duration: 250ms;
 }
 .view.page-doc.ng-leave-active {
   opacity: 1;
 }
 .view.page-doc.ng-hide-remove {
-  transition-duration: 250ms;
-  -webkit-transition-duration: 250ms;
-  display: block !important;
   opacity: 1;
 }

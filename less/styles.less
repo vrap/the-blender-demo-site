@@ -63,24 +63,52 @@ Mixines
 /*
 Icone
  */
+// @font-face {
+// 	font-family: "Flaticon_back";
+// 	src: url("../fonts/flaticon/flaticon_back.eot");
+// 	src: url("../fonts/flaticon/flaticon_back.eot#iefix") format("embedded-opentype"),
+// 	url("../fonts/flaticon/flaticon_back.woff") format("woff"),
+// 	url("../fonts/flaticon/flaticon_back.ttf") format("truetype"),
+// 	url("../fonts/flaticon/flaticon_back.svg") format("svg");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+// [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+// 	font-family: Flaticon_back;
+//         font-size: 50px;
+// font-style: normal;
+// }.flaticon-arrow72:before {
+// 	content: "\e000";
+// }
+
 @font-face {
-	font-family: "Flaticon_back";
-	src: url("../fonts/flaticon/flaticon_back.eot");
-	src: url("../fonts/flaticon/flaticon_back.eot#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon/flaticon_back.woff") format("woff"),
-	url("../fonts/flaticon/flaticon_back.ttf") format("truetype"),
-	url("../fonts/flaticon/flaticon_back.svg") format("svg");
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon/flaticon_other.eot");
+	src: url("../fonts/flaticon/flaticon_other.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon/flaticon_other.woff") format("woff"),
+	url("../fonts/flaticon/flaticon_other.ttf") format("truetype"),
+	url("../fonts/flaticon/flaticon_other.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-	font-family: Flaticon_back;
-        font-size: 50px;
+	font-family: Flaticon;
+        font-size: 20px;
 font-style: normal;
-}.flaticon-arrow72:before {
+}.flaticon-android2:before {
 	content: "\e000";
 }
+.flaticon-arrow72:before {
+	content: "\e001";
+	font-size: 50px;
+}
+.flaticon-github7:before {
+	content: "\e002";
+}
+
+
 
 
 /*
@@ -138,6 +166,9 @@ Button
 	.border-radius(5px);
     border: 0;
     cursor: pointer;
+    &:hover{
+    	opacity: 0.8;
+    }
 
     &.btn-master{
 		background-color: @c-master-other;
@@ -231,12 +262,12 @@ Button
 .contener-doc{
 		
 	.content{
-
+	
+		overflow: auto;
 		height: 100%;
 		width: 100%;
 		position: absolute;
 		padding: 30px 280px 200px;
-		padding-bottom: 300px;
 		h1{
 			color: @c-master-other;
 			font-size: 3em;
@@ -347,38 +378,40 @@ Button
  */
 .contener-community{
 	
+	background-color: @light;
 	
 	width: 100%;
 	height: 100%;
+	
+	h1{
+		text-align: right;
+		color: @c-community-other;
+		font-size: 3em;
+		.reset-margin;
+		margin-bottom: 30px;
+		padding: 30px 280px 0px 280px;
+
+        @media only screen
+        and (max-device-width : 1024px),
+        only screen
+        and (max-width : 1024px) {
+            padding: 30px 110px 0 0;
+        }
+	}
 
 	.content{
-		
-
-		h1{
-			color: @c-community-other;
-			font-size: 3em;
-			.reset-margin;
-			margin-bottom: 30px;
-			padding: 30px 280px 0px 280px;
-
-            @media only screen
-            and (max-device-width : 1024px),
-            only screen
-            and (max-width : 1024px) {
-                padding: 30px 110px 0 0;
-            }
-		}
 
         height: 100%;
 		width: 100%;
 		position: absolute;
 		text-align: right;
+		
+		background-color: @c-community;
 
-		.header{
+		.page{
 			width: 100%;
 			padding: 50px 280px 50px 280px;
-			background-color: @c-community;
-			height: 81.3%;
+			
 			text-align: right;
 
             @media only screen
@@ -476,6 +509,32 @@ Button
 
 
             }
+			
+			&.register{
+				background-color: @c-community-other;
+				h2{
+					font-family: @pacifico;
+					font-size: 3.3em;
+					line-height: 0.9em;
+					color: @light;
+					margin-bottom: 40px;
+				}
+				padding: 30px;
+				padding-bottom: 40px;
+				.border-radius(5px);
+				width: 50%;
+				float: right;
+				margin-right: 280px;
+				margin-top: 80px;
+				.btn{
+					i{
+						padding-right: 10px;
+						margin-right: 10px;
+						border-right : 1px solid @c-master-other-darken;
+					}
+				}
+			}
+
 		}
 
 	}
@@ -523,16 +582,24 @@ Button
         position: fixed;
         left: 0;
         padding: 30px;
+        padding-top: 40px;
         color: @light;
     }
 
     .content {
         background: @light;
         color: @wet-asphalt;
+		
+		padding-top: 40px;
+		padding-bottom: 100px;
 
         .sub-content {
             width: 50%;
             margin: auto;
+			
+			.video{
+				text-align: center;
+			}
 
             h1 {
                 text-align: left;
@@ -600,15 +667,13 @@ Button
                 }
             }
         }
-
-
     }
 }
 
 /*
 Annimation
  */
-.view {
+.view, page.register {
     -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -623,13 +688,13 @@ Annimation
     /* easeOutQuad */
 }
 
-.view.ng-enter {
+.view.ng-enter, page.register {
     opacity: 0;
     transition-duration: 250ms;
     -webkit-transition-duration: 250ms;
 }
 
-.view.ng-enter-active {
+.view.ng-enter-active, page.register {
     opacity: 1;
 }
 
@@ -652,8 +717,6 @@ Annimation
 
 .view.page-doc.ng-enter {
     opacity: 1;
-    transition-duration: 250ms;
-    -webkit-transition-duration: 250ms;
 }
 
 .view.page-doc.ng-enter-active {
@@ -662,8 +725,6 @@ Annimation
 
 .view.page-doc.ng-leave {
     opacity: 1;
-    transition-duration: 250ms;
-    -webkit-transition-duration: 250ms;
 }
 
 .view.page-doc.ng-leave-active {
@@ -671,8 +732,5 @@ Annimation
 }
 
 .view.page-doc.ng-hide-remove {
-    transition-duration: 250ms;
-    -webkit-transition-duration: 250ms;
-    display: block !important;
     opacity: 1;
 }

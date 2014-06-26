@@ -2,13 +2,12 @@
 	<nav class="nav">
 		<a href="#/home" class="back"><i class="flaticon-arrow72"></i></a>
 	</nav>
+
+	<h1>The community</h1>
+
 	<div class="content">
 
-		<h1>The community</h1>
-
-
-
-		<section class="header">
+		<div class="page" ng-hide="valid">
             <p class="about">
                 You can create an account to connect to your application on your smartphone.
                 You shall create, drink, share cocktails with a large community of cocktail drinkers!
@@ -52,7 +51,7 @@
                 </form>
 
             </div>
-            <div class="about">
+<!--             <div class="about">
                 <div class="circle-container">
                     <div class="circle">
                         <span class="number">{{ nbRecipes }}</span><br/>cocktails
@@ -70,8 +69,15 @@
                         <span class="number">{{ nbIngredients }}</span><br/>ingredients
                     </div>
                 </div>
-            </div>
+            </div> -->
+		</div>
+		
+		<div class="page register" ng-show="valid">
+			
+			<h2>Welcome to the blender community !</h2>
+			<a href="" class="btn btn-master" ><i class="flaticon-android2"></i>Download the app</a>
 
-		</section>
+		</div>
+
 	</div>
 </div>
