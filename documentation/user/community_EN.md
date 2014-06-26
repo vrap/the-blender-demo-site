@@ -2,7 +2,7 @@
 
 The community is used to regroup users, and let them share there favorites cocktails. 
 
-With the community system, all users can import their favorites cocktail to any blenders machines and export any cocktails on their community.
+With the community system, all users can import their favorites cocktails to any blenders machines and export any cocktail on their community.
 
 ### Prerequisites
 

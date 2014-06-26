@@ -1,6 +1,6 @@
 ## Overview
 
-Four computer science students had the idea of creatin The Blender. This machine is a connected machine for the creation and distribution of cocktails.
+Four computer science students had the idea of creating The Blender. This machine is a connected object for the creation and distribution of cocktails.
 
 Basically, the machine is a series of structures called modules, each containing a valve and a bottle. 
 One such module is called Master, it contains no valve or bottle, but the electronics required for the machine. 
