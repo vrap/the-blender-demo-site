@@ -19,17 +19,18 @@ _Node.js package manager, should already be installed as part of Node.js._
 
 ### Settings
 
-The application needs to be configured according to your own environment. We tried to reduce to a minimum, so this step is simple.
+The application needs to be configured according to your own environment. It is reduced to minimum, so this step is normally simple.
 
-Below the generic configuration file of the application. We recommend not to change, but to make a copy and edit it.
-
+Below the generic configuration file of the application. It is recommended not to change, but to make a copy and edit it:
 
 	// Copy the sample file to custom file
 	cp config.sample.js config.js
 
+Original file:
+
 	/**
-	* config.js
-	*/
+	 * config.js
+	 */
 	module.exports = {
 		database: {
 			url: 'mongodb://localhost:25486/the-blender'
@@ -59,4 +60,3 @@ Below the generic configuration file of the application. We recommend not to cha
 	};
 
 ### Use
-
