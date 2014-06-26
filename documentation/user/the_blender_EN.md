@@ -1,1 +1,0 @@
-Clone The blender with a lasercutter, 3D printer and some electronic materials.
