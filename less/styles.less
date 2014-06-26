@@ -236,6 +236,7 @@ Button
 		width: 100%;
 		position: absolute;
 		padding: 30px 280px 200px;
+		padding-bottom: 300px;
 		h1{
 			color: @c-master-other;
 			font-size: 3em;
@@ -273,6 +274,20 @@ Button
 			width: 500px;
 			height: 500px;
 		}
+		hr{
+			.reset-margin;
+			margin-top: 40px;
+			border-top: 1px dotted lighten(@wet-asphalt, 50%);
+		}
+		blockquote{
+			.reset-margin;
+			padding: 10px 30px;
+			background-color: #fff;
+			border-left: 5px solid @c-master-other;
+			margin: 20px 0;
+			font-style: italic;
+		}
+
 	}
 
 	.nav{
@@ -313,6 +328,13 @@ Button
 					text-decoration: none;
 					display: block;
 					padding: 10px 25px;
+					&.double{
+						line-height: 13px;
+						span{
+							font-size: 0.6em;
+						}
+						
+					}
 				}
 			}
 		};
