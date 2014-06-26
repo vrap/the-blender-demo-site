@@ -4,7 +4,7 @@ angular.module('blenderFactory', [])
 
 	return {
 		uri : {
-			community : 'http://localhost:9999'//'http://community.the-blender.io'
+			community : 'http://community.the-blender.io'
 		}
 		
 	}
