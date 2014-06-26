@@ -410,6 +410,99 @@ Button
 .contener-community .nav .back {
   color: #22c9c3;
 }
+/**
+ * About
+ */
+.contener-about {
+  background: #34495e;
+  color: #fafafa;
+}
+.contener-about h1 {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 15px;
+}
+.contener-about i {
+  margin: auto;
+}
+.contener-about .nav {
+  text-align: right;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  padding: 30px;
+  color: #fafafa;
+}
+.contener-about .content {
+  background: #fafafa;
+  color: #34495e;
+}
+.contener-about .content .sub-content {
+  width: 50%;
+  margin: auto;
+}
+.contener-about .content .sub-content h1 {
+  text-align: left;
+}
+.contener-about .content .sub-content h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.contener-about .content .sub-content p {
+  color: #2c3e50;
+  text-align: justify;
+  font-size: 1.1em;
+}
+.contener-about .content .sub-content p b {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.contener-about .content .sub-content a {
+  color: #557495;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.contener-about .content .sub-content a:hover {
+  color: #43386e;
+}
+.contener-about .content .sub-content .dream-team {
+  list-style: none;
+  padding-left: 0px;
+}
+.contener-about .content .sub-content .dream-team li {
+  display: inline-block;
+  margin: 5px 0 5px 0;
+}
+.contener-about .content .sub-content .dream-team .first-letter {
+  font-size: 3.5em;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  text-align: center;
+  float: left;
+  margin: 0 10px 0 0;
+  color: #fafafa;
+}
+.contener-about .content .sub-content .dream-team .first-letter.val {
+  background: #6dc5c8;
+}
+.contener-about .content .sub-content .dream-team .first-letter.rom {
+  background: #557495;
+}
+.contener-about .content .sub-content .dream-team .first-letter.aur {
+  background: #494c7a;
+}
+.contener-about .content .sub-content .dream-team .first-letter.pie {
+  background: #43386e;
+}
 /*
 Annimation
  */

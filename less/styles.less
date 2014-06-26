@@ -472,11 +472,112 @@ Button
 		}
 
 	}
-	
-	
-
 }
 
+/**
+ * About
+ */
+.contener-about {
+    background: @wet-asphalt;
+    color: @light;
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    i {
+        margin: auto;
+    }
+
+    .nav{
+        text-align: right;
+        width: 200px;
+        position: fixed;
+        left: 0;
+        padding: 30px;
+        color: @light;
+    }
+
+    .content {
+        background: @light;
+        color: @wet-asphalt;
+
+        .sub-content {
+            width: 50%;
+            margin: auto;
+
+            h1 {
+                text-align: left;
+            }
+            h2 {
+                .open-sans-regular;
+                .reset-margin;
+            }
+            p {
+                color: @midnight-blue;
+                text-align: justify;
+                font-size: 1.1em;
+
+                b {
+                    .open-sans-regular;
+                }
+            }
+            a {
+                color: #557495;
+                text-decoration: none;
+                .open-sans-regular;
+
+                -webkit-transition: all .3s ease-in;
+                -moz-transition: all .3s ease-in;
+                -ms-transition: all .3s ease-in;
+                -o-transition: all .3s ease-in;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    color: @blue-darken;
+                }
+            }
+
+            .dream-team {
+                list-style: none;
+                padding-left: 0px;
+
+                li {
+                    display: inline-block;
+                    margin: 5px 0 5px 0;
+                }
+
+                .first-letter {
+                    font-size: 3.5em;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 40px;
+                    text-align: center;
+                    float: left;
+                    margin: 0 10px 0 0;
+                    color: @light;
+
+                    &.val {
+                        background: #6dc5c8;
+                    }
+                    &.rom {
+                        background: #557495;
+                    }
+                    &.aur {
+                        background: #494c7a;
+                    }
+                    &.pie {
+                        background: #43386e;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
 
 /*
 Annimation
