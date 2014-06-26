@@ -9,7 +9,7 @@ angular.module('blenderController', [])
 	$scope.pageClass = 'page-doc';
 	var language = $routeParams.language;
 	$scope.template = $routeParams.template;
-	$scope.doc = 'documentation/user/software_' + $scope.template + '_' + language.toUpperCase() + '.md';
+	$scope.doc = 'documentation/user/' + $scope.template + '_' + language.toUpperCase() + '.md';
 
 
 }])
