@@ -1,3 +1,6 @@
+Create or join a community of cocktail lover and share your creations with your friends.
+
+
 <div id="community">
 <h2>Community</h2>
 
