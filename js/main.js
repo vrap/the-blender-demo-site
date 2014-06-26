@@ -28,6 +28,7 @@ var app = angular.module('the-blender',
     [
         'blenderController',
         'blenderRoute',
-        'blenderDirective',
+        'blenderFactory',
+        'yaru22.md',
         'ngAnimate',
     ]);

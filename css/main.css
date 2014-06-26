@@ -246,33 +246,6 @@ font
   }
 }
 /*
- * Fonts
- */
-@font-face {
-  font-family: "Flaticon";
-  src: url("../fonts/flaticon/flaticon.eot");
-  src: url("../fonts/flaticon/flaticon.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon/flaticon.woff") format("woff"), url("../fonts/flaticon/flaticon.ttf") format("truetype"), url("../fonts/flaticon/flaticon.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  font-family: Flaticon;
-  font-style: normal;
-}
-.flaticon-github7:before {
-  content: "\e000";
-}
-/*
- * General
- */
-html,
-body {
-  height: 100%;
-}
-/*
  * Back to top button
  */
 #toHome {
