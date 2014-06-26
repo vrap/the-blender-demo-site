@@ -29,9 +29,11 @@ The Blender have got 3 principals parts to make cocktail.
 
 // need schema electrique
 
+To install the soft on the arduino, see the [application doc](#/doc/en/application)
+
 #### Server application
 
-After you have a ready arduino, you have to connect your rasberry with the usb. You can put it on the last floor of your module master.
+After you have a ready arduino, connect your rasberry with the usb. You can put it on the last floor of your module master.
 
 To install the software in your rasberry see the [application doc](#/doc/en/application)
 
@@ -50,7 +52,7 @@ To install the software in your rasberry see the [application doc](#/doc/en/appl
 
 // need schema electrique
 
-> __Caution__, in this version of the blender, you have to connect your robot in master with cable. This is necessary to provide a large power cable lenght 
+> __Caution__, in this version of the blender, you have to connect your robot in master with cable. This is necessary to provide a large power cable lenght proportional of your total of module.
 
 * * *
 
