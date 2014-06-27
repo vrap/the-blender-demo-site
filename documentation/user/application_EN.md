@@ -17,7 +17,7 @@ _Node.js package manager, should already be installed as part of Node.js._
 
 ### Installation
 
-    npm install the-blender
+    curl -sS http://the-blender.io/install.sh | sudo sh
 
 * * *
 
