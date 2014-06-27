@@ -1,45 +1,53 @@
-## The blender
+## The Blender
 
-The blender structure created for a easy assembling. This documentation explaine you how you can cut, print, glue, assembling a complete blender machine.
+The Blender structure is designed to allow easy assembling. The following documentation provides details of cutting, gluing and assembly the various components of the machine.
 
-> __Caution__, machines to cut and 3D print as necessary  
-(you can find there, on structure like [fabLab](https://www.fablabs.io/))
+> __Caution__, machines used to cut and 3D print as necessary 
+(they can be found in structures such as [FabLab](https://www.fablabs.io/)).
 
-* A _laser cut machine_ (to cut all blender structure)
-* A _3d print machine_ (to print the mecanique)
+The Blender is composed of 3 major elements:
 
-The Blender have got 3 principals parts to make cocktail.
-
-* A master
-* A robot
-* A module 
+* One Master
+* Several modules
+* One robot
 
 * * *
 
-### The master
+### Master
 
 #### Needed
 
 * A module master (See the documentation of [module](#/doc/en/module/) to make it)
-* An Arduino uno
+* An Arduino UNO
 * A motor shield
-* A Rasbery
+* A Rasbperry
 
-#### Electronique connection
+#### Electronic connection
 
-// need schema electrique
+// Need electric schema
 
-To install the soft on the arduino, see the [application doc](#/doc/en/application)
+To install the soft on the Arduino, see the [Application](#/doc/en/application)
 
 #### Server application
 
 After you have a ready arduino, connect your rasberry with the usb. You can put it on the last floor of your module master.
 
-To install the software in your rasberry see the [application doc](#/doc/en/application)
+To install the software on your Raspberry, see the [Application](#/doc/en/application)
 
 * * *
 
-### The robot
+### Module (pourer)
+
+#### Needed
+
+* A module (see the documentation [here](#/doc/en/module/))
+* A valve (to print, download the file [here]())
+* A pipe (buying [here]())
+* A bottle of _Hépar_ (a french trend mark very famouse)
+
+* * *
+
+### Robot
 
 #### Needed
 
@@ -48,25 +56,8 @@ To install the software in your rasberry see the [application doc](#/doc/en/appl
 * A steper
 * A Sensor
 
-#### Electronique connection
+#### Electronic connection
 
-// need schema electrique
+// Need electronic schema 
 
 > __Caution__, in this version of the blender, you have to connect your robot in master with cable. This is necessary to provide a large power cable lenght proportional of your total of module.
-
-* * *
-
-### A module (pourer)
-
-#### Needed
-
-* A module  (See the documentation [here](#/doc/en/module/))
-* A valve (to print, download the file [here]())
-* A pipe (buying [here]())
-* A buttle of _Hépar_ (a french trend mark very famouse)
-
-
-
-
-
-

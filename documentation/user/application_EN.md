@@ -13,9 +13,13 @@ _Download and install MongoDB. Make sure it's running on the default port (27017
 _Node.js package manager, should already be installed as part of Node.js._  
 [NPM](https://www.npmjs.org/)
 
+* * *
+
 ### Installation
 
     npm install the-blender
+
+* * *
 
 ### Settings
 
@@ -41,7 +45,7 @@ Original file:
          */
         database: {
             /**
-             * URL is the url of the mongodb database
+             * URL of the mongodb database
              * @type {String}
              */
             url: 'mongodb://localhost:27017/the-blender'
@@ -145,5 +149,7 @@ Original file:
             }
         }
     };
+
+* * *
 
 ### Use

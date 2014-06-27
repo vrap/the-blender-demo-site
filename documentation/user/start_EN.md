@@ -1,4 +1,6 @@
-## Overview
+## Start
+
+### Overview
 
 Four computer science students had the idea of creating The Blender. This machine is a connected object for the creation and distribution of cocktails.
 
@@ -11,7 +13,9 @@ Creators have built respecting the principles they considered important:
 * Modularity : in theory, it may be a very large number of bottles, and therefore a very high number of cocktails available. 
 * Lowcost : the materials used are easy to find, and especially cheap.
 
-## Getting started
+* * *
+
+### Getting started
 
 The following documentation is created to allow you to build your own modules and assemble The Blender.
 
@@ -19,10 +23,12 @@ We tried to make these as clear as possible, but the principles, techniques and 
 
 Enjoy!
 
+* * *
+
 ### Now you can:
 
 * Install the [Application](#/doc/en/application)
 * Create a community [Community](#/doc/en/community)
 * Build your own [Blender](#/doc/en/the-blender)
 
-*Note: despite the simplicity of The Blender, it is nevertheless necessary to have a minimum of computer knowledge to correctly use the various elements.*
+> __Note__, despite the simplicity of The Blender, it is nevertheless necessary to have a minimum of computer knowledge to correctly use the various elements.

@@ -2,6 +2,8 @@
 
 Download the plans [here]()
 
+* * *
+
 ### Needed
 
 * 4 bords of medium wood 600mm x 400mm x 6mm (one module)
