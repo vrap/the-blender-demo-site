@@ -1,0 +1,423 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/*
+Colors
+ */
+/*
+font
+ */
+/*
+ * General anims
+ */
+@keyframes bubble {
+  0% {
+    bottom: 0px;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+    bottom: 275px;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    bottom: 550px;
+  }
+}
+@keyframes fillTequilla {
+  0% {
+    height: 0;
+    bottom: 40px;
+  }
+  25% {
+    height: 50px;
+    bottom: 90px;
+  }
+  50% {
+    height: 100px;
+    bottom: 140px;
+  }
+  75% {
+    height: 150px;
+    bottom: 190px;
+  }
+  100% {
+    height: 200px;
+    bottom: 240px;
+  }
+}
+@keyframes strowFall {
+  0% {
+    top: -250px;
+    left: -26px;
+    transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+  }
+  40% {
+    top: 0px;
+    left: -26px;
+    transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    -webkit-transform: rotate(-24deg);
+  }
+  60% {
+    top: -10px;
+    left: -70px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  80% {
+    top: -10px;
+    left: 0px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    top: 0px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+}
+/*
+ * Firefox anims
+ */
+@-moz-keyframes bubble {
+  0% {
+    bottom: 0px;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+    bottom: 275px;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    bottom: 550px;
+  }
+}
+@-moz-keyframes fillTequilla {
+  0% {
+    height: 0;
+    bottom: 40px;
+  }
+  25% {
+    height: 50px;
+    bottom: 90px;
+  }
+  50% {
+    height: 100px;
+    bottom: 140px;
+  }
+  75% {
+    height: 150px;
+    bottom: 190px;
+  }
+  100% {
+    height: 200px;
+    bottom: 240px;
+  }
+}
+@-moz-keyframes strowFall {
+  0% {
+    top: -250px;
+    left: -26px;
+    transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+  }
+  40% {
+    top: 0px;
+    left: -26px;
+    transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    -webkit-transform: rotate(-24deg);
+  }
+  60% {
+    top: -10px;
+    left: -70px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  80% {
+    top: -10px;
+    left: 0px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    top: 0px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+}
+/*
+ * Chrome, Opera and Safari anims
+ */
+@-webkit-keyframes bubble {
+  0% {
+    bottom: 0px;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+    bottom: 275px;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    bottom: 550px;
+  }
+}
+@-webkit-keyframes fillTequilla {
+  0% {
+    height: 0;
+    bottom: 40px;
+  }
+  25% {
+    height: 50px;
+    bottom: 90px;
+  }
+  50% {
+    height: 100px;
+    bottom: 140px;
+  }
+  75% {
+    height: 150px;
+    bottom: 190px;
+  }
+  100% {
+    height: 200px;
+    bottom: 240px;
+  }
+}
+@-webkit-keyframes strowFall {
+  0% {
+    top: -250px;
+    left: -26px;
+    transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+  }
+  40% {
+    top: 0px;
+    left: -26px;
+    transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    -webkit-transform: rotate(-24deg);
+  }
+  60% {
+    top: -10px;
+    left: -70px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  80% {
+    top: -10px;
+    left: 0px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    top: 0px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+}
+.bubble {
+  animation-name: bubble;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -moz-animation-name: bubble;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-name: bubble;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  z-index: -1;
+}
+.bubble1 {
+  left: 5%;
+  animation-delay: 400ms;
+  animation-duration: 1400ms;
+  -moz-animation-delay: 400ms;
+  -moz-animation-duration: 1400ms;
+  -webkit-animation-delay: 400ms;
+  -webkit-animation-duration: 1400ms;
+}
+.bubble2 {
+  left: 12.4%;
+  animation-delay: 100ms;
+  animation-duration: 1500ms;
+  -moz-animation-delay: 100ms;
+  -moz-animation-duration: 1500ms;
+  -webkit-animation-delay: 100ms;
+  -webkit-animation-duration: 1500ms;
+}
+.bubble3 {
+  left: 22.5%;
+  animation-delay: 600ms;
+  animation-duration: 1800ms;
+  -moz-animation-delay: 600ms;
+  -moz-animation-duration: 1800ms;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 1800ms;
+}
+.bubble4 {
+  left: 40.4%;
+  animation-delay: 500ms;
+  animation-duration: 1100ms;
+  -moz-animation-delay: 500ms;
+  -moz-animation-duration: 1100ms;
+  -webkit-animation-delay: 500ms;
+  -webkit-animation-duration: 1100ms;
+}
+.bubble5 {
+  left: 50%;
+  animation-delay: 700ms;
+  animation-duration: 1200ms;
+  -moz-animation-delay: 700ms;
+  -moz-animation-duration: 1200ms;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 1200ms;
+}
+.bubble6 {
+  left: 70%;
+  animation-delay: 400ms;
+  animation-duration: 1400ms;
+  -moz-animation-delay: 400ms;
+  -moz-animation-duration: 1400ms;
+  -webkit-animation-delay: 400ms;
+  -webkit-animation-duration: 1400ms;
+}
+.bubble7 {
+  left: 83%;
+  animation-delay: 100ms;
+  animation-duration: 1100ms;
+  -moz-animation-delay: 100ms;
+  -moz-animation-duration: 1100ms;
+  -webkit-animation-delay: 100ms;
+  -webkit-animation-duration: 1100ms;
+}
+.bubble8 {
+  left: 90%;
+  animation-delay: 600ms;
+  animation-duration: 1300ms;
+  -moz-animation-delay: 600ms;
+  -moz-animation-duration: 1300ms;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 1300ms;
+}
+.tequilla-sunrise {
+  width: 200px;
+  height: 250px;
+}
+.tequilla-sunrise .tequilla-glass {
+  margin: auto;
+  width: 100px;
+  height: 250px;
+  background: #ffffff;
+  opacity: 0.4;
+  border-radius: 5px 5px 10px 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.tequilla-sunrise .tequilla {
+  margin: auto;
+  position: relative;
+  bottom: 240px;
+  width: 90px;
+  height: 200px;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.8), rgba(241, 196, 15, 0.8));
+  background: -moz-linear-gradient(bottom, rgba(255, 0, 0, 0.8), rgba(241, 196, 15, 0.8));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 0, 0, 0.8)), to(rgba(241, 196, 15, 0.8)));
+  border-radius: 5px 5px 10px 10px;
+  box-shadow: inset 2px -2px 10px rgba(0, 0, 0, 0.08);
+  animation-name: fillTequilla;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0ms;
+  animation-duration: 1500ms;
+  -moz-animation-name: fillTequilla;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-delay: 0ms;
+  -moz-animation-duration: 1500ms;
+  -webkit-animation-name: fillTequilla;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0ms;
+  -webkit-animation-duration: 1500ms;
+}
+.tequilla-sunrise .strow {
+  position: relative;
+  top: 0px;
+  animation-name: strowFall;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0ms;
+  animation-duration: 1000ms;
+  -moz-animation-name: strowFall;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-delay: 0ms;
+  -moz-animation-duration: 1000ms;
+  -webkit-animation-name: strowFall;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0ms;
+  -webkit-animation-duration: 1000ms;
+}
+.tequilla-sunrise .strow .strow-top {
+  background: rgba(0, 0, 0, 0.75);
+  position: relative;
+  top: -20px;
+  left: 140px;
+  width: 65px;
+  height: 7px;
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-20deg);
+  /* Opera, Chrome, and Safari */
+}
+.tequilla-sunrise .strow .strow-bottom {
+  background: rgba(0, 0, 0, 0.75);
+  position: relative;
+  top: 98px;
+  left: 3px;
+  width: 215px;
+  height: 7px;
+  transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  /* IE 9 */
+  -webkit-transform: rotate(108deg);
+  /* Opera, Chrome, and Safari */
+}
