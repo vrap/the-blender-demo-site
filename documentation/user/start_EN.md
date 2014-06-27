@@ -2,16 +2,22 @@
 
 ### Overview
 
-Four computer science students had the idea of creating The Blender. This machine is a connected object for the creation and distribution of cocktails.
+Four computer science students had the idea of creating The Blender. This machine is a connected cocktails dispenser, linked to an application for creating recipes.
 
-Basically, the machine is a series of structures called modules, each containing a valve and a bottle. 
-One such module is called Master, it contains no valve or bottle, but the electronics required for the machine. 
-A robot which is placed on a glass moves under these modules and recovered doses of liquid.
+The Blender is a succession of structures called modules, each containing a valve and a bottle.  
+One such module is called Master, it contains no valve or bottle, but the electronics required for the machine.  
+A robot which is placed on a glass moves under these modules and recovered doses of liquid to makes cocktails.
 
-Creators have built respecting the principles they considered important:
-* Opensource : everyone can recover the plans of the machine and [softwares](https://github.com/vrap/) parts and modify them.
-* Modularity : in theory, it may be a very large number of bottles, and therefore a very high number of cocktails available. 
-* Lowcost : the materials used are easy to find, and especially cheap.
+A smartphone application is needed to control The Blender. See the [documentation](#/doc/en/application) for more details.
+
+A community system lets users share their favorite cocktails. See the [documentation](#/doc/en/community) for more details.
+
+> __Note:__ a web application is also available
+
+The creative process is trying to respect these 3 principles:
+* opensource : everyone can recover the plans of the machine and [softwares](https://github.com/vrap/) parts and modify them.
+* modularity : in theory, it may be a very large number of modules, and therefore a very high number of cocktails available. 
+* lowcost : the materials used are easy to find, and especially cheap.
 
 * * *
 
@@ -27,8 +33,8 @@ Enjoy!
 
 ### Now you can:
 
-* Install the [Application](#/doc/en/application)
-* Create a community [Community](#/doc/en/community)
-* Build your own [Blender](#/doc/en/the-blender)
+* install the [application](#/doc/en/application)
+* create a [community](#/doc/en/community)
+* build your own [Blender](#/doc/en/the-blender) machine
 
-> __Note__, despite the simplicity of The Blender, it is nevertheless necessary to have a minimum of computer knowledge to correctly use the various elements.
+> __Note:__ despite the simplicity of The Blender, it is nevertheless necessary to have a minimum of computer knowledge to correctly use the various elements.

@@ -15,32 +15,36 @@ The Blender is composed of 3 major elements:
 
 ### Master
 
-#### Needed
+The Master module is not expected to have a bottle and a valve, it contains electronics (Arduino, cables and Raspberry Pi).
 
-* A module master (See the documentation of [module](#/doc/en/module/) to make it)
-* An Arduino UNO
-* A motor shield
-* A Rasbperry
+#### Equipment
+
+* A Master structure (see the [documentation](#/doc/en/module/))
+* An [Arduino UNO](http://arduino.cc/en/Main/arduinoBoardUno)
+* A [Motor Shield](http://arduino.cc/en/Main/ArduinoMotorShieldR3)
+* A [Raspberry Pi](http://www.raspberrypi.org/)
 
 #### Electronic connection
 
 // Need electric schema
 
-To install the soft on the Arduino, see the [Application](#/doc/en/application)
+To install the software part on the Arduino, see the [documentation](#/doc/en/application)
 
 #### Server application
 
-After you have a ready arduino, connect your rasberry with the usb. You can put it on the last floor of your module master.
+After you have a ready Arduino, connect your Raspberry Pi with a USB port. You can put it on the last floor of your module master.
 
-To install the software on your Raspberry, see the [Application](#/doc/en/application)
+To install the software on your Raspberry Pi, see the [Application](#/doc/en/application)
 
 * * *
 
-### Module (pourer)
+### Module
 
-#### Needed
+This is the base module, which contains a valve and a bottle.
 
-* A module (see the documentation [here](#/doc/en/module/))
+#### Equipment
+
+* A module structure (see the [documentation](#/doc/en/module/))
 * A valve (to print, download the file [here]())
 * A pipe (buying [here]())
 * A bottle of _Hépar_ (a french trend mark very famouse)
@@ -49,12 +53,12 @@ To install the software on your Raspberry, see the [Application](#/doc/en/applic
 
 ### Robot
 
-#### Needed
+#### Equipment
 
-* A robot structure (See the documentation [here](#/doc/en/robot/))
-* The mecaniques (to print, download the file [here]())
-* A steper
-* A Sensor
+* A robot structure (see the [documentation](#/doc/en/robot/))
+* The mecanics (to print, download the file [here]())
+* A stepper motor
+* A sensor
 
 #### Electronic connection
 
