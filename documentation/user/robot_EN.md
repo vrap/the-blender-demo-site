@@ -24,3 +24,10 @@ Download the plans [here]()
 * Wood glue
 
 #### 1 : _Cut all the pieces_
+
+![step 1](documentation/user/img/anim08.gif)
+
+#### 1 : _Assembling the master_
+
+![step 1](documentation/user/img/anim09.gif)
+

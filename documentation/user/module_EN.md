@@ -48,15 +48,21 @@ This is the base module, which contains a valve and a bottle.
 ##### 2 : _Glue all the floors_
 
 ![step 1](documentation/user/img/anim02.gif)
+![step 1](documentation/user/img/anim03.gif)
 
 ##### 3 : _Glue the module's sides_
 
-![step 1](documentation/user/img/anim03.gif)
+![step 1](documentation/user/img/anim04.gif)
 
 ##### 4 : _Glue the front piece_
 
-![step 1](documentation/user/img/anim04.gif)
+![step 1](documentation/user/img/anim05.gif)
 
 ##### 5 : _And the first floor_
 
-![step 1](documentation/user/img/anim05.gif)
+![step 1](documentation/user/img/anim06.gif)
+
+##### 5 : _put the facade to finich im_
+
+![step 1](documentation/user/img/anim10.gif)
+
