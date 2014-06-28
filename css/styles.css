@@ -505,6 +505,14 @@ Button
   width: 50%;
   margin: auto;
 }
+.contener-about .content .sub-content img {
+  width: 100%;
+  margin-bottom: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
 .contener-about .content .sub-content .video {
   text-align: center;
 }
