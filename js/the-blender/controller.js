@@ -6,6 +6,10 @@ angular.module('blenderController', [])
 
 .controller('docController', ['$scope', '$routeParams', function($scope, $routeParams){
 
+    $scope.$on('$viewContentLoaded', function(event) {
+        $window._gaq.push(['_trackPageview', $location.path()]);
+      });
+
 	$scope.pageClass = 'page-doc';
 	var language = $routeParams.language;
 	$scope.template = $routeParams.template;
@@ -16,11 +20,19 @@ angular.module('blenderController', [])
 
 .controller('aboutController', ['$scope', function($scope){
 
+    $scope.$on('$viewContentLoaded', function(event) {
+        $window._gaq.push(['_trackPageview', $location.path()]);
+      });
+
 	$scope.pageClass = 'page-about';
 
 }])
 
 .controller('communityController', ['$scope', 'ApiService', function($scope, ApiService){
+
+    $scope.$on('$viewContentLoaded', function(event) {
+        $window._gaq.push(['_trackPageview', $location.path()]);
+      });
 
 	$scope.pageClass = 'page-community';
 	 // Set Resource for recipes.
