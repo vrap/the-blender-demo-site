@@ -4,6 +4,8 @@
 
 The Master module is not expected to have a bottle and a valve, it contains electronics (Arduino, cables and Raspberry Pi).
 
+__Download Module Master plans [here](Ressource/theblender_master_B2.eps.zip)__  
+
 #### Supplies
 
 * A Master structure
@@ -28,6 +30,8 @@ To install the software on your Raspberry Pi, see the [application](#/doc/en/app
 ### Standard module
 
 This is the base module, which contains a valve and a bottle.
+
+__Download Module Pourrer plans [here](Ressource/theblender_pourrer_B2.eps.zip)__
 
 #### Supplies
 
